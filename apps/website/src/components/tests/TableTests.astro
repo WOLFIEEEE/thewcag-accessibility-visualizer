@@ -1,0 +1,169 @@
+---
+import CategoryTitle from "./CategoryTitle.astro";
+import CategorySectionTitle from "./CategorySectionTitle.astro";
+import ExampleCard from "./ExampleCard.astro";
+import { createLocalT } from "../../lib/i18n";
+import { en, ja } from "./TableTests.lang";
+
+interface Props {
+  lang?: string;
+}
+const lang = (Astro.props as Props).lang || "en";
+const t = createLocalT(lang === "ja" ? ja : en, en);
+
+const tableClasses =
+  "border-collapse border border-zinc-300 dark:border-zinc-600";
+const cellClasses =
+  "border border-zinc-300 dark:border-zinc-600 p-2 text-zinc-900 dark:text-zinc-100";
+---
+
+<CategoryTitle id="tables">{t("title")}</CategoryTitle>
+<p class="text-zinc-700 dark:text-zinc-300 mb-6">{t("intro")}</p>
+
+<CategorySectionTitle id="table-structure"
+  >{t("sections.structure.title")}</CategorySectionTitle
+>
+
+<ExampleCard
+  title={t("examples.structure.properHeaders.title")}
+  description={t("examples.structure.properHeaders.desc")}
+>
+  <table class={tableClasses}>
+    <thead>
+      <tr>
+        <th
+          scope="col"
+          class={`${cellClasses} bg-zinc-100 dark:bg-zinc-700 font-bold`}
+          >Name</th
+        >
+        <th
+          scope="col"
+          class={`${cellClasses} bg-zinc-100 dark:bg-zinc-700 font-bold`}
+          >Age</th
+        >
+        <th
+          scope="col"
+          class={`${cellClasses} bg-zinc-100 dark:bg-zinc-700 font-bold`}
+          >City</th
+        >
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class={cellClasses}>John</td>
+        <td class={cellClasses}>25</td>
+        <td class={cellClasses}>New York</td>
+      </tr>
+      <tr>
+        <td class={cellClasses}>Jane</td>
+        <td class={cellClasses}>30</td>
+        <td class={cellClasses}>London</td>
+      </tr>
+    </tbody>
+  </table>
+</ExampleCard>
+
+<ExampleCard
+  title={t("examples.structure.noHeaders.title")}
+  description={t("examples.structure.noHeaders.desc")}
+>
+  <table class={tableClasses}>
+    <tr>
+      <td class={cellClasses}>Name</td>
+      <td class={cellClasses}>Age</td>
+      <td class={cellClasses}>City</td>
+    </tr>
+    <tr>
+      <td class={cellClasses}>John</td>
+      <td class={cellClasses}>25</td>
+      <td class={cellClasses}>New York</td>
+    </tr>
+    <tr>
+      <td class={cellClasses}>Jane</td>
+      <td class={cellClasses}>30</td>
+      <td class={cellClasses}>London</td>
+    </tr>
+  </table>
+</ExampleCard>
+
+<ExampleCard
+  title={t("examples.headers.rowHeaders.title")}
+  description={t("examples.headers.rowHeaders.desc")}
+>
+  <table class={tableClasses}>
+    <thead>
+      <tr>
+        <th
+          scope="col"
+          class={`${cellClasses} bg-zinc-100 dark:bg-zinc-700 font-bold`}
+          >Quarter</th
+        >
+        <th
+          scope="col"
+          class={`${cellClasses} bg-zinc-100 dark:bg-zinc-700 font-bold`}
+          >Sales</th
+        >
+        <th
+          scope="col"
+          class={`${cellClasses} bg-zinc-100 dark:bg-zinc-700 font-bold`}
+          >Profit</th
+        >
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th
+          scope="row"
+          class={`${cellClasses} bg-zinc-50 dark:bg-zinc-800 font-bold`}>Q1</th
+        >
+        <td class={cellClasses}>$100K</td>
+        <td class={cellClasses}>$20K</td>
+      </tr>
+      <tr>
+        <th
+          scope="row"
+          class={`${cellClasses} bg-zinc-50 dark:bg-zinc-800 font-bold`}>Q2</th
+        >
+        <td class={cellClasses}>$150K</td>
+        <td class={cellClasses}>$30K</td>
+      </tr>
+    </tbody>
+  </table>
+</ExampleCard>
+
+<ExampleCard
+  title={t("examples.headers.withCaption.title")}
+  description={t("examples.headers.withCaption.desc")}
+>
+  <table class={tableClasses}>
+    <caption
+      class="text-lg font-semibold mb-2 text-zinc-900 dark:text-zinc-100"
+    >
+      Employee Information
+    </caption>
+    <thead>
+      <tr>
+        <th
+          scope="col"
+          class={`${cellClasses} bg-zinc-100 dark:bg-zinc-700 font-bold`}
+          >Name</th
+        >
+        <th
+          scope="col"
+          class={`${cellClasses} bg-zinc-100 dark:bg-zinc-700 font-bold`}
+          >Department</th
+        >
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class={cellClasses}>Alice</td>
+        <td class={cellClasses}>Engineering</td>
+      </tr>
+      <tr>
+        <td class={cellClasses}>Bob</td>
+        <td class={cellClasses}>Marketing</td>
+      </tr>
+    </tbody>
+  </table>
+</ExampleCard>

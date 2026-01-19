@@ -1,0 +1,237 @@
+---
+import CategoryTitle from "./CategoryTitle.astro";
+import CategorySectionTitle from "./CategorySectionTitle.astro";
+import ExampleCard from "./ExampleCard.astro";
+import { createLocalT } from "../../lib/i18n";
+import { en, ja } from "./ImageTests.lang";
+
+interface Props {
+  lang?: string;
+}
+const lang = (Astro.props as Props).lang || "en";
+const t = createLocalT(lang === "ja" ? ja : en, en);
+---
+
+<CategoryTitle id="images">{t("title")}</CategoryTitle>
+<p class="text-zinc-700 dark:text-zinc-300 mb-6">{t("intro")}</p>
+
+<CategorySectionTitle id="img-element"
+  >{t("sections.imgElement.title")}</CategorySectionTitle
+>
+<p class="text-sm text-zinc-700 dark:text-zinc-300 mb-4">
+  {t("sections.imgElement.desc")}
+</p>
+
+<ExampleCard
+  title={t("examples.img.withAlt.title")}
+  description={t("examples.img.withAlt.desc")}
+>
+  <img
+    class="w-full max-w-40"
+    src="/a11y-visualizer/images/bigsight.jpg"
+    alt="Tokyo Big Sight"
+    width="160"
+    height="120"
+  />
+</ExampleCard>
+
+<ExampleCard
+  title={t("examples.img.withAltAndTitle.title")}
+  description={t("examples.img.withAltAndTitle.desc")}
+>
+  <img
+    class="w-full max-w-40"
+    src="/a11y-visualizer/images/bigsight.jpg"
+    alt="Tokyo Big Sight"
+    title="Tokyo Big Sight"
+    width="160"
+    height="120"
+  />
+</ExampleCard>
+
+<ExampleCard
+  title={t("examples.img.missingAlt.title")}
+  description={t("examples.img.missingAlt.desc")}
+>
+  <img
+    class="w-full max-w-40"
+    src="/a11y-visualizer/images/bigsight.jpg"
+    width="160"
+    height="120"
+  />
+</ExampleCard>
+
+<ExampleCard
+  title={t("examples.img.titleOnly.title")}
+  description={t("examples.img.titleOnly.desc")}
+>
+  <img
+    class="w-full max-w-40"
+    src="/a11y-visualizer/images/bigsight.jpg"
+    title="Tokyo Big Sight"
+    width="160"
+    height="120"
+  />
+</ExampleCard>
+
+<ExampleCard
+  title={t("examples.img.decorativeEmptyAlt.title")}
+  description={t("examples.img.decorativeEmptyAlt.desc")}
+>
+  <img
+    class="w-full max-w-40"
+    src="/a11y-visualizer/images/bigsight.jpg"
+    alt=""
+    width="160"
+    height="120"
+  />
+</ExampleCard>
+
+<ExampleCard
+  title={t("examples.img.decorativeEmptyAltWithTitle.title")}
+  description={t("examples.img.decorativeEmptyAltWithTitle.desc")}
+>
+  <img
+    class="w-full max-w-40"
+    src="/a11y-visualizer/images/bigsight.jpg"
+    alt=""
+    title="Tokyo Big Sight"
+    width="160"
+    height="120"
+  />
+</ExampleCard>
+
+<ExampleCard
+  title={t("examples.img.ariaHidden.title")}
+  description={t("examples.img.ariaHidden.desc")}
+>
+  <img
+    class="w-full max-w-40"
+    src="/a11y-visualizer/images/bigsight.jpg"
+    alt="Tokyo Big Sight"
+    aria-hidden="true"
+    width="160"
+    height="120"
+  />
+</ExampleCard>
+
+<CategorySectionTitle id="svg-element"
+  >{t("sections.svgElement.title")}</CategorySectionTitle
+>
+<p class="text-sm text-zinc-700 dark:text-zinc-300 mb-4">
+  {t("sections.svgElement.desc")}
+</p>
+
+<ExampleCard
+  title={t("examples.svg.withTitle.title")}
+  description={t("examples.svg.withTitle.desc")}
+>
+  <svg width="100" height="100" viewBox="0 0 100 100" class="block">
+    <title>Blue circle</title>
+    <circle cx="50" cy="50" r="40" fill="rgb(59 130 246)"></circle>
+  </svg>
+</ExampleCard>
+
+<ExampleCard
+  title={t("examples.svg.withTitleAndRole.title")}
+  description={t("examples.svg.withTitleAndRole.desc")}
+>
+  <svg width="100" height="100" viewBox="0 0 100 100" class="block" role="img">
+    <title>Blue circle</title>
+    <circle cx="50" cy="50" r="40" fill="rgb(59 130 246)"></circle>
+  </svg>
+</ExampleCard>
+
+<ExampleCard
+  title={t("examples.svg.noTitle.title")}
+  description={t("examples.svg.noTitle.desc")}
+>
+  <svg width="100" height="100" viewBox="0 0 100 100" class="block">
+    <circle cx="50" cy="50" r="40" fill="rgb(59 130 246)"></circle>
+  </svg>
+</ExampleCard>
+
+<ExampleCard
+  title={t("examples.svg.ariaHidden.title")}
+  description={t("examples.svg.ariaHidden.desc")}
+>
+  <svg
+    width="100"
+    height="100"
+    viewBox="0 0 100 100"
+    aria-hidden="true"
+    class="block"
+  >
+    <title>Blue circle</title>
+    <circle cx="50" cy="50" r="40" fill="rgb(59 130 246)"></circle>
+  </svg>
+</ExampleCard>
+
+<ExampleCard
+  title={t("examples.svg.withAriaLabel.title")}
+  description={t("examples.svg.withAriaLabel.desc")}
+>
+  <svg
+    width="100"
+    height="100"
+    viewBox="0 0 100 100"
+    aria-label="Blue circle"
+    class="block"
+  >
+    <circle cx="50" cy="50" r="40" fill="rgb(59 130 246)"></circle>
+  </svg>
+</ExampleCard>
+
+<ExampleCard
+  title={t("examples.svg.withImgRole.title")}
+  description={t("examples.svg.withImgRole.desc")}
+>
+  <svg
+    width="100"
+    height="100"
+    viewBox="0 0 100 100"
+    role="img"
+    aria-label="Blue circle"
+    class="block"
+  >
+    <circle cx="50" cy="50" r="40" fill="rgb(59 130 246)"></circle>
+  </svg>
+</ExampleCard>
+
+<ExampleCard
+  title={t("examples.svg.withPresentationRole.title")}
+  description={t("examples.svg.withPresentationRole.desc")}
+>
+  <svg
+    width="100"
+    height="100"
+    viewBox="0 0 100 100"
+    role="presentation"
+    class="block"
+  >
+    <circle cx="50" cy="50" r="40" fill="rgb(59 130 246)"></circle>
+  </svg>
+</ExampleCard>
+
+<CategorySectionTitle id="role-img"
+  >{t("sections.roleImg.title")}</CategorySectionTitle
+>
+<p class="text-sm text-zinc-700 dark:text-zinc-300 mb-4">
+  {t("sections.roleImg.desc")}
+</p>
+
+<ExampleCard
+  title={t("examples.roleImg.withAriaLabel.title")}
+  description={t("examples.roleImg.withAriaLabel.desc")}
+>
+  <span role="img" aria-label="tableflip text art" class="text-lg block py-4">
+    (╯°□°)╯︵ ┻━┻
+  </span>
+</ExampleCard>
+
+<ExampleCard
+  title={t("examples.roleImg.withoutAriaLabel.title")}
+  description={t("examples.roleImg.withoutAriaLabel.desc")}
+>
+  <span role="img" class="text-lg block py-4"> (╯°□°)╯︵ ┻━┻ </span>
+</ExampleCard>

@@ -1,0 +1,132 @@
+---
+import CategoryTitle from "./CategoryTitle.astro";
+import CategorySectionTitle from "./CategorySectionTitle.astro";
+import ExampleCard from "./ExampleCard.astro";
+import { createLocalT } from "../../lib/i18n";
+import { ja, en } from "./LinkTests.lang";
+import { IoLogoGithub } from "react-icons/io5";
+
+interface Props {
+  lang?: string;
+}
+const lang = (Astro.props as Props).lang || "en";
+const t = createLocalT(lang === "ja" ? ja : en, en);
+
+const linkClasses =
+  "text-teal-700 dark:text-teal-400 underline cursor-pointer hover:text-teal-800 dark:hover:text-teal-300";
+---
+
+<CategoryTitle id="links">{t("title")}</CategoryTitle>
+<p class="text-zinc-700 dark:text-zinc-300 mb-6">{t("intro")}</p>
+
+<CategorySectionTitle id="a-element"
+  >{t("sections.aElement.title")}</CategorySectionTitle
+>
+
+<ExampleCard
+  title={t("examples.a.standard.title")}
+  description={t("examples.a.standard.desc")}
+>
+  <p class="text-base">
+    <a href="http://example.com" class={linkClasses}>example.com</a>
+  </p>
+</ExampleCard>
+
+<ExampleCard
+  title={t("examples.a.noHref.title")}
+  description={t("examples.a.noHref.desc")}
+>
+  <p class="text-base mb-3">
+    <a
+      class={linkClasses}
+      onclick="javascript:window.location.href='https://example.com'"
+      >example.com</a
+    >
+  </p>
+  <p class="text-zinc-700 dark:text-zinc-300 mb-1">
+    <a>example 2 ({t("examples.a.noHref.underConstruction")})</a>
+  </p>
+  <p class="text-sm text-zinc-600 dark:text-zinc-400">
+    {t("examples.a.noHref.note")}
+  </p>
+</ExampleCard>
+
+<CategorySectionTitle id="link-role"
+  >{t("sections.linkRole.title")}</CategorySectionTitle
+>
+
+<ExampleCard
+  title={t("examples.role.withRole.title")}
+  description={t("examples.role.withRole.desc")}
+>
+  <span
+    role="link"
+    class={linkClasses}
+    onclick="javascript:window.location.href='https://example.com'"
+    onkeydown="if(event.key==='Enter'){window.location.href='https://example.com'}"
+    tabindex="0"
+  >
+    example.com
+  </span>
+</ExampleCard>
+
+<CategorySectionTitle id="link-variations"
+  >{t("sections.variations.title")}</CategorySectionTitle
+>
+
+<ExampleCard
+  title={t("examples.variations.targetBlank.title")}
+  description={t("examples.variations.targetBlank.desc")}
+>
+  <a
+    href="http://example.com"
+    target="_blank"
+    rel="noreferrer"
+    class={linkClasses}
+  >
+    example.com (Open in new tab)
+  </a>
+</ExampleCard>
+
+<CategorySectionTitle id="icon-links"
+  >{t("sections.iconLinks.title")}</CategorySectionTitle
+>
+
+<ExampleCard
+  title={t("examples.icons.onlyIcon.title")}
+  description={t("examples.icons.onlyIcon.desc")}
+>
+  <a
+    href="http://github.com/"
+    class="inline-block text-teal-700 dark:text-teal-400"
+  >
+    <IoLogoGithub size={24} />
+  </a>
+</ExampleCard>
+
+<ExampleCard
+  title={t("examples.icons.withAriaLabel.title")}
+  description={t("examples.icons.withAriaLabel.desc")}
+>
+  <a
+    href="http://github.com"
+    class="inline-block text-teal-700 dark:text-teal-400"
+  >
+    <IoLogoGithub role="img" aria-label="GitHub" size={24} />
+  </a>
+</ExampleCard>
+
+<ExampleCard
+  title={t("examples.icons.withText.title")}
+  description={t("examples.icons.withText.desc")}
+>
+  <p class="text-base">
+    <a
+      href="http://github.com"
+      class="inline-flex gap-0.5 text-teal-700 dark:text-teal-400"
+    >
+      <IoLogoGithub aria-hidden="true" size={24} />
+      GitHub
+    </a>
+  </p>
+</ExampleCard>

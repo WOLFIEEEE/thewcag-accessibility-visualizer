@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "TheWCAG Accessibility Visualizer"
+  },
+  "enabled": {
+    "message": "Enabled"
+  },
+  "shortcut_toggleExtension": {
+    "message": "Toggle extension on/off"
+  },
+  "shortcut_toggleTips": {
+    "message": "Toggle tips visibility"
+  },
+  "shortcut_toggleLiveRegions": {
+    "message": "Toggle live regions"
+  },
+  "shortcut_presetBasic": {
+    "message": "Switch to Basic preset"
+  },
+  "shortcut_presetStructure": {
+    "message": "Switch to Structure preset"
+  },
+  "shortcut_presetContent": {
+    "message": "Switch to Content preset"
+  }
+}

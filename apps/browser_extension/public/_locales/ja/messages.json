@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "TheWCAG Accessibility Visualizer"
+  },
+  "enabled": {
+    "message": "有効"
+  },
+  "shortcut_toggleExtension": {
+    "message": "拡張機能のオン/オフを切り替え"
+  },
+  "shortcut_toggleTips": {
+    "message": "チップの表示/非表示を切り替え"
+  },
+  "shortcut_toggleLiveRegions": {
+    "message": "ライブリージョンの切り替え"
+  },
+  "shortcut_presetBasic": {
+    "message": "基本プリセットに切り替え"
+  },
+  "shortcut_presetStructure": {
+    "message": "構造プリセットに切り替え"
+  },
+  "shortcut_presetContent": {
+    "message": "コンテンツプリセットに切り替え"
+  }
+}

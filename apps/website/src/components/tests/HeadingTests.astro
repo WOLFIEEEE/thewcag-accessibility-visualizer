@@ -1,0 +1,103 @@
+---
+import CategoryTitle from "./CategoryTitle.astro";
+import CategorySectionTitle from "./CategorySectionTitle.astro";
+import ExampleCard from "./ExampleCard.astro";
+import { createLocalT } from "../../lib/i18n";
+import { en, ja } from "./HeadingTests.lang";
+
+interface Props {
+  lang?: string;
+}
+const lang = (Astro.props as Props).lang || "en";
+const t = createLocalT(lang === "ja" ? ja : en, en);
+---
+
+<CategoryTitle id="headings">{t("title")}</CategoryTitle>
+<p class="text-zinc-700 dark:text-zinc-300 mb-6">{t("intro")}</p>
+
+<CategorySectionTitle id="heading-hierarchy"
+  >{t("sections.hierarchy.title")}</CategorySectionTitle
+>
+
+<ExampleCard
+  title={t("examples.hierarchy.demo.title")}
+  description={t("examples.hierarchy.demo.desc")}
+>
+  <blockquote
+    class="flex flex-col gap-4 p-4 border border-zinc-300 dark:border-zinc-600 rounded bg-zinc-50 dark:bg-zinc-800"
+  >
+    <h1 class="text-5xl font-bold text-zinc-900 dark:text-zinc-100">
+      Heading 1
+    </h1>
+    <h2 class="text-3xl font-bold text-zinc-800 dark:text-zinc-200">
+      Heading 2
+    </h2>
+    <h3 class="text-2xl font-bold text-zinc-700 dark:text-zinc-300">
+      Heading 3
+    </h3>
+    <h4 class="text-xl font-bold text-zinc-700 dark:text-zinc-300">
+      Heading 4
+    </h4>
+    <h5 class="text-lg font-bold text-zinc-700 dark:text-zinc-300">
+      Heading 5
+    </h5>
+    <h6 class="text-base font-bold text-zinc-700 dark:text-zinc-300">
+      Heading 6
+    </h6>
+    <div
+      class="text-sm font-bold text-zinc-700 dark:text-zinc-400"
+      aria-level="7"
+      role="heading"
+    >
+      Custom Heading (role="heading" aria-level="7")
+    </div>
+  </blockquote>
+
+  <div class="mt-4 text-sm text-zinc-700 dark:text-zinc-300">
+    <p class="mb-2"><strong>{t("examples.hierarchy.best.title")}</strong></p>
+    <ul class="list-disc list-inside space-y-1">
+      <li>{t("examples.hierarchy.best.item1")}</li>
+      <li>{t("examples.hierarchy.best.item2")}</li>
+      <li>{t("examples.hierarchy.best.item3")}</li>
+    </ul>
+  </div>
+</ExampleCard>
+
+<CategorySectionTitle id="problematic-headings"
+  >{t("sections.problematic.title")}</CategorySectionTitle
+>
+
+<ExampleCard
+  title={t("examples.problematic.skipped.title")}
+  description={t("examples.problematic.skipped.desc")}
+>
+  <blockquote
+    class="p-4 border border-red-300 dark:border-red-600 rounded bg-red-50 dark:bg-red-900/20"
+  >
+    <h1 class="text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-2">
+      Main Title (h1)
+    </h1>
+    <h4 class="text-lg font-bold text-red-700 dark:text-red-400">
+      Skipped to h4 - This is problematic!
+    </h4>
+    <p class="text-sm text-zinc-700 dark:text-zinc-300 mt-2">
+      {t("examples.problematic.skipped.note")}
+    </p>
+  </blockquote>
+</ExampleCard>
+
+<ExampleCard
+  title={t("examples.problematic.empty.title")}
+  description={t("examples.problematic.empty.desc")}
+>
+  <blockquote>
+    <h6
+      class="border border-red-300 dark:border-red-600 p-2 bg-red-50 dark:bg-red-900/20"
+    >
+      <!-- Empty heading -->
+    </h6>
+    <p class="text-sm text-zinc-700 dark:text-zinc-300 mt-2">
+      {t("examples.problematic.empty.note")}
+    </p>
+  </blockquote>
+</ExampleCard>

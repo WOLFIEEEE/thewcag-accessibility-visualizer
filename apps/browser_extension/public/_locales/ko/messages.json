@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "TheWCAG Accessibility Visualizer"
+  },
+  "enabled": {
+    "message": "활성화됨"
+  },
+  "shortcut_toggleExtension": {
+    "message": "확장 프로그램 켜기/끄기"
+  },
+  "shortcut_toggleTips": {
+    "message": "팁 표시/숨기기 전환"
+  },
+  "shortcut_toggleLiveRegions": {
+    "message": "라이브 리전 전환"
+  },
+  "shortcut_presetBasic": {
+    "message": "기본 프리셋으로 전환"
+  },
+  "shortcut_presetStructure": {
+    "message": "구조 프리셋으로 전환"
+  },
+  "shortcut_presetContent": {
+    "message": "콘텐츠 프리셋으로 전환"
+  }
+}

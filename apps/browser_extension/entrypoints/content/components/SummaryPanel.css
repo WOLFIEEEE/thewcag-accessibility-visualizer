@@ -1,0 +1,275 @@
+.a11y-summary-panel {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 2147483647;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.a11y-summary-panel.collapsed {
+  max-width: 120px;
+}
+
+.a11y-summary-panel.expanded {
+  width: 320px;
+  max-height: 70vh;
+  background: #1f2937;
+  border-radius: 8px;
+  box-shadow:
+    0 4px 6px -1px rgb(0 0 0 / 0.1),
+    0 2px 4px -2px rgb(0 0 0 / 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.a11y-summary-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #1f2937;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #e5e7eb;
+  font-size: 12px;
+  transition: background-color 0.2s;
+}
+
+.a11y-summary-toggle:hover {
+  background: #374151;
+}
+
+.a11y-summary-panel.expanded .a11y-summary-toggle {
+  border-radius: 0;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid #374151;
+}
+
+.a11y-summary-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.a11y-summary-errors {
+  background: #dc2626;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.a11y-summary-warnings {
+  background: #d97706;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.a11y-summary-pass {
+  background: #059669;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.a11y-summary-icon {
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+.a11y-summary-content {
+  padding: 12px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.a11y-summary-title {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #f3f4f6;
+}
+
+.a11y-summary-empty {
+  color: #9ca3af;
+  text-align: center;
+  padding: 16px;
+}
+
+.a11y-summary-stats {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.a11y-summary-stat {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.a11y-summary-stat.error {
+  background: rgb(220 38 38 / 0.2);
+}
+
+.a11y-summary-stat.warning {
+  background: rgb(217 119 6 / 0.2);
+}
+
+.a11y-summary-stat-count {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #f3f4f6;
+}
+
+.a11y-summary-stat-label {
+  font-size: 11px;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.a11y-summary-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.a11y-summary-category {
+  background: #374151;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.a11y-summary-category-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #e5e7eb;
+  font-size: 12px;
+  text-align: left;
+}
+
+.a11y-summary-category-header:hover {
+  background: #4b5563;
+}
+
+.a11y-summary-category-name {
+  flex: 1;
+  font-weight: 500;
+}
+
+.a11y-summary-category-count {
+  background: #6b7280;
+  color: #f3f4f6;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.a11y-summary-category-icon {
+  width: 16px;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.a11y-summary-issues {
+  margin: 0;
+  padding: 0 8px 8px 8px;
+  list-style: none;
+}
+
+.a11y-summary-issue {
+  padding: 8px;
+  margin-top: 4px;
+  background: #1f2937;
+  border-radius: 4px;
+  border-left: 3px solid;
+}
+
+.a11y-summary-issue.error {
+  border-left-color: #dc2626;
+}
+
+.a11y-summary-issue.warning {
+  border-left-color: #d97706;
+}
+
+.a11y-summary-issue-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.a11y-summary-issue-icon {
+  flex-shrink: 0;
+  width: 14px;
+  text-align: center;
+}
+
+.a11y-summary-issue.error .a11y-summary-issue-icon {
+  color: #ef4444;
+}
+
+.a11y-summary-issue.warning .a11y-summary-issue-icon {
+  color: #f59e0b;
+}
+
+.a11y-summary-issue-message {
+  flex: 1;
+  color: #d1d5db;
+  word-break: break-word;
+}
+
+.a11y-summary-issue-count {
+  flex-shrink: 0;
+  font-size: 10px;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+.a11y-summary-issue-elements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 6px;
+  padding-left: 20px;
+}
+
+.a11y-summary-issue-element-name {
+  background: #4b5563;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 10px;
+  color: #93c5fd;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.a11y-summary-issue-more {
+  font-size: 10px;
+  color: #9ca3af;
+  padding: 2px 4px;
+}
