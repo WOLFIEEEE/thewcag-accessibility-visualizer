@@ -81,11 +81,16 @@ $ pnpm --filter=@a11y-visualizer/browser-extension build
 $ pnpm --filter=@a11y-visualizer/browser-extension build:firefox
 
 # Create zip files for store distribution
-$ pnpm --filter=@a11y-visualizer/browser-extension zip
-$ pnpm --filter=@a11y-visualizer/browser-extension zip:firefox
+$ pnpm zip                                    # Creates Chrome zip (from root)
+$ pnpm --filter=@a11y-visualizer/browser-extension zip      # Chrome zip
+$ pnpm --filter=@a11y-visualizer/browser-extension zip:firefox  # Firefox zip
 ```
 
 The built extensions will be in `apps/browser_extension/dist/` directory, and zip files will be created in the same location.
+
+**Chrome Web Store Zip**: `apps/browser_extension/dist/thewcag-a11y-visualizer-{version}-chrome.zip`
+
+For detailed publishing instructions, see [CHROME_STORE_PUBLISHING.md](./CHROME_STORE_PUBLISHING.md).
 
 ## Privacy Policy
 
