@@ -27,13 +27,16 @@ Automatically builds and deploys the website to GitHub Pages when changes are pu
 
 **Troubleshooting:**
 
-**Error: "Get Pages site failed"**
-- **Solution**: Enable GitHub Pages first (see Prerequisites above)
-- Go to Settings → Pages → Set Source to "GitHub Actions"
+**Error: "Get Pages site failed" or "Resource not accessible by integration"**
+- **Solution**: You MUST manually enable GitHub Pages first
+- Go to Settings → Pages → Set Source to "GitHub Actions" → Save
+- The workflow cannot automatically enable Pages due to GitHub security restrictions
+- After manually enabling, the workflow will work correctly
 
 **Error: "Pages site not found"**
 - Ensure Pages is enabled in repository settings
 - Wait a few minutes after enabling and try again
+- Check that you have admin access to the repository
 
 **Build fails:**
 - Check that `pnpm-lock.yaml` is committed

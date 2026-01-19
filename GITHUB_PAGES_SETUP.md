@@ -32,7 +32,11 @@ export default defineConfig({
 - If your repository is named `YOUR_USERNAME.github.io` (user/organization site), use `base: "/"`
 - The `site` URL should match your GitHub Pages URL
 
-### Step 2: Enable GitHub Pages
+### Step 2: Enable GitHub Pages (REQUIRED - Must Do This First!)
+
+**⚠️ IMPORTANT: You MUST manually enable GitHub Pages before the workflow can run!**
+
+GitHub Actions cannot automatically enable Pages due to security restrictions. You need to do this manually:
 
 1. Go to your repository on GitHub
 2. Click **Settings** (in the repository menu)
@@ -40,6 +44,8 @@ export default defineConfig({
 4. Under **Build and deployment**:
    - **Source**: Select **GitHub Actions**
    - Click **Save**
+
+**Why?** GitHub requires repository admin permissions to enable Pages, which GitHub Actions workflows don't have for security reasons. Once you enable it manually, the workflow will work automatically on all future runs.
 
 ### Step 3: Update Hardcoded Paths (If Needed)
 
