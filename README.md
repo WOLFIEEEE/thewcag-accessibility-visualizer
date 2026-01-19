@@ -1,7 +1,8 @@
 # TheWCAG Accessibility Visualizer Browser Extension
 
 ![Screenshot of TheWCAG Accessibility Visualizer showing annotations of accessibility properties](./TheWCAG-Accessibility-Visualizer-Image.png)
-(This screenshot from [駒瑠市〜アクセシビリティ上の問題の体験サイト〜](https://a11yc.com/city-komaru/))
+
+*Screenshot from [thewcag.com](https://thewcag.com)*
 
 ## About
 
@@ -52,6 +53,20 @@ $ pnpm --filter=@a11y-visualizer/browser-extension dev:firefox
 WXT will automatically open your browser and load the extension in development mode.
 
 You can test the extension using the test pages available on the website at `/tests`. The website serves as both promotional content and comprehensive test cases for accessibility features.
+
+## Website Deployment
+
+The website is automatically deployed to GitHub Pages when changes are pushed to the `main` branch. See [apps/website/DEPLOYMENT.md](./apps/website/DEPLOYMENT.md) for detailed deployment instructions.
+
+To build the website locally:
+
+```bash
+# Build the website
+$ pnpm --filter=@a11y-visualizer/website build
+
+# Preview the built website
+$ pnpm --filter=@a11y-visualizer/website preview
+```
 
 ## How to build
 

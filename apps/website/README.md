@@ -16,7 +16,7 @@ TheWCAG Accessibility Visualizer のウェブサイト用のディレクトリ�
 - WCAG レベルAA相当のアクセシビリティ
 - 多言語に対応する
 - 開発時に使用するポートは、`4000` とする（TheWCAG Accessibility Visualizerが `3000` ポートを使用するため）
-- ベースURLは、`/a11y-visualizer/` とする（GitHub Pagesでのホスティングを考慮）
+- ベースURLは、`/thewcag-accessibility-visualizer/` とする（GitHub Pagesでのホスティングを考慮）
 
 ### 多言語化
 
