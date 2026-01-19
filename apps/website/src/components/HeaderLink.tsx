@@ -8,10 +8,10 @@ export const HeaderLink = ({
   subtitle?: string;
 }) => (
   <a
-    href={lang === "en" ? "/a11y-visualizer/" : `/a11y-visualizer/${lang}/`}
+    href={lang === "en" ? "/thewcag-accessibility-visualizer/" : `/thewcag-accessibility-visualizer/${lang}/`}
     className="flex items-center"
   >
-    <img src="/a11y-visualizer/icon.svg" alt="" className="w-12 h-12 mr-4" />
+    <img src="/thewcag-accessibility-visualizer/icon.png" alt="" className="w-12 h-12 mr-4" />
     <div>
       <h1 className="text-3xl font-bold text-teal-700 dark:text-teal-200">
         {title}

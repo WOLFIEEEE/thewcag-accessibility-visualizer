@@ -4,7 +4,7 @@ const dict = {
     title: "Visualize Web Accessibility",
     description:
       "A browser extension that lets you easily view information perceived by users of assistive technologies like screen readers, directly in Chrome. Make accessibility visible and actionable for developers and designers.",
-    screenshotSrc: "/a11y-visualizer/images/screenshot_en.png",
+    screenshotSrc: "/thewcag-accessibility-visualizer/images/screenshot_en.jpg",
   },
   about: {
     title: "About TheWCAG Accessibility Visualizer",
@@ -168,14 +168,14 @@ const dict = {
     description:
       "Learn how to use TheWCAG Accessibility Visualizer effectively. Our comprehensive guide covers all features, customization options, and best practices.",
     link: "View User Guide",
-    url: "/a11y-visualizer/docs/UsersGuide",
+    url: "/thewcag-accessibility-visualizer/docs/UsersGuide",
   },
   tests: {
     title: "Test Pages",
     description:
       "We've prepared various implementation examples for you to verify TheWCAG Accessibility Visualizer's functionality. Test different accessibility scenarios and see how the extension visualizes them.",
     link: "Go to Test Pages",
-    url: "/a11y-visualizer/tests",
+    url: "/thewcag-accessibility-visualizer/tests",
   },
 } as const;
 

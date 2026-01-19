@@ -94,7 +94,7 @@ async function main() {
       // Matches ](images/... | ./images/... | ../images/... etc)
       raw = raw.replace(
         /\]\((?:\.?\.\/?)*images\//g,
-        `](/a11y-visualizer/docs/${lang}/images/`,
+        `](/thewcag-accessibility-visualizer/docs/${lang}/images/`,
       );
 
       // Compute relative path to docs layout from outDir

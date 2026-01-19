@@ -4,7 +4,7 @@ const dict = {
     title: "웹 접근성을 시각화",
     description:
       "스크린 리더 등 보조 기술 사용자가 인식하는 정보를 Chrome에서 쉽게 확인할 수 있는 확장 프로그램입니다. 개발자와 디자이너를 위해 접근성을 시각화하고 실행 가능하게 만듭니다.",
-    screenshotSrc: "/a11y-visualizer/images/screenshot_ko.png",
+    screenshotSrc: "/thewcag-accessibility-visualizer/images/screenshot_ko.jpg",
   },
   about: {
     title: "TheWCAG Accessibility Visualizer 소개",
@@ -168,14 +168,14 @@ const dict = {
     description:
       "TheWCAG Accessibility Visualizer를 효과적으로 사용하는 방법을 배우세요. 모든 기능, 사용자 정의 옵션 및 모범 사례를 다루는 포괄적인 가이드입니다.",
     link: "사용자 가이드 보기",
-    url: "/a11y-visualizer/docs/ko/UsersGuide",
+    url: "/thewcag-accessibility-visualizer/docs/ko/UsersGuide",
   },
   tests: {
     title: "테스트 페이지",
     description:
       "TheWCAG Accessibility Visualizer의 동작을 확인하기 위해 다양한 구현 예제를 준비했습니다. 다른 접근성 시나리오를 테스트하고 확장 프로그램이 이를 어떻게 시각화하는지 확인합니다.",
     link: "테스트 페이지로 이동",
-    url: "/a11y-visualizer/ko/tests",
+    url: "/thewcag-accessibility-visualizer/ko/tests",
   },
 } as const;
 

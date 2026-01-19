@@ -4,7 +4,7 @@ const dict = {
     title: "Webアクセシビリティを、見る",
     description:
       "スクリーンリーダーなどの支援技術のユーザーが知覚している情報を、Chromeで簡単に確認できる拡張機能です。開発者やデザイナーにとって、アクセシビリティを可視化し、実用的なものにします。",
-    screenshotSrc: "/a11y-visualizer/images/screenshot_ja.png",
+    screenshotSrc: "/thewcag-accessibility-visualizer/images/screenshot_ja.jpg",
   },
   about: {
     title: "TheWCAG Accessibility Visualizerについて",
@@ -168,14 +168,14 @@ const dict = {
     description:
       "TheWCAG Accessibility Visualizerを効果的に使用する方法を学びます。すべての機能、カスタマイズオプション、ベストプラクティスをカバーする包括的なガイドです。",
     link: "ユーザーガイドを見る",
-    url: "/a11y-visualizer/docs/ja/UsersGuide",
+    url: "/thewcag-accessibility-visualizer/docs/ja/UsersGuide",
   },
   tests: {
     title: "テスト用ページ",
     description:
       "TheWCAG Accessibility Visualizerの動作を確認するために、様々な実装例を用意しています。異なるアクセシビリティシナリオをテストし、拡張機能がそれらをどのように可視化するかを確認します。",
     link: "テスト用ページへ",
-    url: "/a11y-visualizer/ja/tests",
+    url: "/thewcag-accessibility-visualizer/ja/tests",
   },
 } as const;
 
