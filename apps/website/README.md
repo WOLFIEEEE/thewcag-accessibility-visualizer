@@ -1,21 +1,21 @@
-# Website of Accessibility Visualizer
+# Website of TheWCAG Accessibility Visualizer
 
-Accessibility Visualizer のウェブサイト用のディレクトリです。
+TheWCAG Accessibility Visualizer のウェブサイト用のディレクトリです。
 
 ## ウェブサイトに求められていること
 
-- `pnpm` を使用し、a11y-visualizer 内のworkspaceである
+- `pnpm` を使用し、thewcag-accessibility-visualizer 内のworkspaceである
 - コンテンツとして、以下のものが含まれている
-  - Accessibility Visualizer の簡単な紹介文
+  - TheWCAG Accessibility Visualizer の簡単な紹介文
   - スクリーンショット
   - ChromeウェブストアとFirefox Add-onsへのリンク
   - GitHub上のユーザーガイドへのリンク
   - GitHubリポジトリへのリンク
 - スタイルはTailwind CSSを使用する
-  - Accessibility Visualizerと同じく、 `teal` カラーと `zinc` カラーを中心に使用する
+  - TheWCAG Accessibility Visualizerと同じく、 `teal` カラーと `zinc` カラーを中心に使用する
 - WCAG レベルAA相当のアクセシビリティ
 - 多言語に対応する
-- 開発時に使用するポートは、`4000` とする（Accessibility Visualizerが `3000` ポートを使用するため）
+- 開発時に使用するポートは、`4000` とする（TheWCAG Accessibility Visualizerが `3000` ポートを使用するため）
 - ベースURLは、`/a11y-visualizer/` とする（GitHub Pagesでのホスティングを考慮）
 
 ### 多言語化
@@ -34,4 +34,10 @@ Accessibility Visualizer のウェブサイト用のディレクトリです。
 
 ### 表記
 
-- Accessibility Visualizer は、すべての言語で `Accessibility Visualizer` と表記すること
+- TheWCAG Accessibility Visualizer は、すべての言語で `TheWCAG Accessibility Visualizer` と表記すること
+
+## Credits and Attribution
+
+This website is for **TheWCAG Accessibility Visualizer**, which is built on top of the original [Accessibility Visualizer](https://github.com/ymrl/a11y-visualizer) by [ymrl](https://github.com/ymrl). We extend our sincere gratitude to the original author for creating this excellent foundation.
+
+このウェブサイトは、[ymrl](https://github.com/ymrl)による元の[Accessibility Visualizer](https://github.com/ymrl/a11y-visualizer)を基に構築された**TheWCAG Accessibility Visualizer**のためのものです。優れた基盤を作成してくださった原作者に心より感謝いたします。

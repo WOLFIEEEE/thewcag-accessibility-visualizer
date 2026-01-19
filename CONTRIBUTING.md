@@ -1,8 +1,8 @@
-# Contributing to Accessibility Visualizer
+# Contributing to TheWCAG Accessibility Visualizer
 
-Accessibility Visualizerに興味を持っていただき、ありがとうございます。以下は、貢献を始めるための基本的なガイドラインです。
+TheWCAG Accessibility Visualizerに興味を持っていただき、ありがとうございます。以下は、貢献を始めるための基本的なガイドラインです。
 
-Thank you for your interest in Accessibility Visualizer. Here are some basic guidelines to help you get started contributing.
+Thank you for your interest in TheWCAG Accessibility Visualizer. Here are some basic guidelines to help you get started contributing.
 
 ## Before You Begin 始める前に
 
@@ -19,10 +19,16 @@ Thank you for your interest in Accessibility Visualizer. Here are some basic gui
 
 By contributing, you agree that your contributions will be licensed under the [MIT License](./LICENSE.txt).
 
+## Credits and Attribution
+
+This project is built on top of the original [Accessibility Visualizer](https://github.com/ymrl/a11y-visualizer) by [ymrl](https://github.com/ymrl). We extend our sincere gratitude to the original author for creating this excellent foundation.
+
+このプロジェクトは、[ymrl](https://github.com/ymrl)による元の[Accessibility Visualizer](https://github.com/ymrl/a11y-visualizer)を基に構築されています。優れた基盤を作成してくださった原作者に心より感謝いたします。
+
 ## Reporting Bugs バグの報告
 
-以下の内容を含めて、[Issue](https://github.com/ymrl/a11y-visualizer/issues)を作成してください。
-Please create an [Issue](https://github.com/ymrl/a11y-visualizer/issues) with the following:
+以下の内容を含めて、[Issue](https://github.com/YOUR_USERNAME/thewcag-accessibility-visualizer/issues)を作成してください。
+Please create an [Issue](https://github.com/YOUR_USERNAME/thewcag-accessibility-visualizer/issues) with the following:
 
 - Clear title: はっきりとしたタイトル
 - Steps to reproduce: 再現手順
@@ -34,7 +40,7 @@ Especially when reporting issues on specific web pages, please provide the URL o
 
 ## Proposing New Features 新機能の提案
 
-新しい機能についても、[Issue](https://github.com/ymrl/a11y-visualizer/issues)を作成してください。
+新しい機能についても、[Issue](https://github.com/YOUR_USERNAME/thewcag-accessibility-visualizer/issues)を作成してください。
 ただし、実装の優先順位は、作者の判断により行います。提案いただいても実現できるかどうか保証できないことをご了承ください。
 
 Please create an [Issue](https://github.com/ymrl/a11y-visualizer/issues) for proposing new features.
@@ -48,13 +54,13 @@ Please provide the following information in the issue:
 
 ## Multilingalization 多言語化 (Help Wanted!!)
 
-We would greatly appreciate it if you could help us multilingualize the user interface and documentation of Accessibility Visualizer.
+We would greatly appreciate it if you could help us multilingualize the user interface and documentation of TheWCAG Accessibility Visualizer.
 The author is a native Japanese speaker and not a native English speaker, and has little knowledge of other languages.
 We welcome any contributions, such as correcting translation errors, adding new languages, and improving existing languages.
 
 Multilingualization of the user interface is done by editing the JSON files in the [src/i18n](./src/i18n) directory. To add a new language, create a new JSON file based on the Japanese (`ja.json`) or English (`en.json`) file, and submit a Pull Request.
 
-Accessibility Visualizerのユーザーインタフェースやドキュメントの多言語化をしていただけると、大変助かります。
+TheWCAG Accessibility Visualizerのユーザーインタフェースやドキュメントの多言語化をしていただけると、大変助かります。
 作者は日本語のネイティブスピーカーであり、英語はネイティブではなく、他の言語についてはほとんど知識がありません。
 翻訳の間違いの修正、新しい言語の追加、既存の言語の改善など、どのような貢献でも歓迎します。
 

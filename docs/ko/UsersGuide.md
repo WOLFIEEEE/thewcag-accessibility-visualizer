@@ -226,3 +226,17 @@ TheWCAG Accessibility Visualizer는 다음 도구와 병용함으로써 더 포�
 - [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview)
 
 또한 이러한 도구를 사용한 검증에 더해 **실제 스크린 리더에 의한 확인**을 실시해야 합니다. TheWCAG Accessibility Visualizer는 개발 효율을 향상시키는 도구이지만, 실제 보조 기술에 의한 확인을 완전히 대체하는 것은 아닙니다.
+
+## 크레딧 및 귀속
+
+**TheWCAG Accessibility Visualizer**는 [ymrl](https://github.com/ymrl)이 만든 원본 [Accessibility Visualizer](https://github.com/ymrl/a11y-visualizer)를 기반으로 구축되었습니다. 훌륭한 기반을 만들고 MIT 라이선스 하에 공개해 주신 원작자에게 진심으로 감사드립니다.
+
+### 원본 프로젝트
+- **저장소**: [ymrl/a11y-visualizer](https://github.com/ymrl/a11y-visualizer)
+- **작성자**: [ymrl](https://github.com/ymrl)
+- **라이선스**: MIT 라이선스
+
+### 이 프로젝트
+- **프로젝트 이름**: TheWCAG Accessibility Visualizer
+- **기반 프로젝트**: ymrl의 Accessibility Visualizer
+- **라이선스**: MIT 라이선스

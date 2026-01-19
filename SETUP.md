@@ -1,6 +1,6 @@
 # Repository Setup Complete! 🎉
 
-This repository has been separated from the Axe-core-server project and is now ready to be pushed to GitHub.
+This repository contains **TheWCAG Accessibility Visualizer**, a browser extension built on top of the original [Accessibility Visualizer](https://github.com/ymrl/a11y-visualizer) by [ymrl](https://github.com/ymrl). The repository is now ready to be pushed to GitHub.
 
 ## Repository Structure
 
@@ -85,3 +85,17 @@ pnpm test
 - All build artifacts (`dist/`, `node_modules/`) are excluded via `.gitignore`
 - The repository is clean and ready for collaboration
 - Website and test pages are included but optional - you can remove them if not needed
+
+## Credits and Attribution
+
+This project is built on top of the original [Accessibility Visualizer](https://github.com/ymrl/a11y-visualizer) by [ymrl](https://github.com/ymrl). We extend our sincere gratitude to the original author for creating this excellent foundation and making it available under the MIT License.
+
+### Original Project
+- **Repository**: [ymrl/a11y-visualizer](https://github.com/ymrl/a11y-visualizer)
+- **Author**: [ymrl](https://github.com/ymrl)
+- **License**: MIT License
+
+### This Project
+- **Repository**: [thewcag-accessibility-visualizer](https://github.com/YOUR_USERNAME/thewcag-accessibility-visualizer)
+- **Based on**: Accessibility Visualizer by ymrl
+- **License**: MIT License

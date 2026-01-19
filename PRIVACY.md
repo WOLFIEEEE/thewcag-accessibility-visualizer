@@ -1,10 +1,12 @@
 # Privacy Policy
 
 ## 1. Overview
-This browser extension (hereinafter referred to as "the Extension") does **not collect, store, or transmit** any personal data or browsing information of the user.  
+This browser extension, **TheWCAG Accessibility Visualizer** (hereinafter referred to as "the Extension"), does **not collect, store, or transmit** any personal data or browsing information of the user.  
 All operations are executed entirely within the user's browser environment.
 
 This project is released under the **MIT License** and is fully **open source**, allowing anyone to inspect, use, or modify its source code.
+
+**Note**: This project is built on top of the original [Accessibility Visualizer](https://github.com/ymrl/a11y-visualizer) by [ymrl](https://github.com/ymrl). The privacy principles remain the same as the original project.
 
 
 ## 2. Data Collection

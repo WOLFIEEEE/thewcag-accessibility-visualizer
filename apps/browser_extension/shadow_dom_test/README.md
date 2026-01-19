@@ -1,6 +1,6 @@
 # Shadow DOM テストページ
 
-このディレクトリには、Accessibility VisualizerのShadow DOM対応をテストするための静的HTMLページが含まれています。
+このディレクトリには、TheWCAG Accessibility VisualizerのShadow DOM対応をテストするための静的HTMLページが含まれています。
 
 ## 概要
 
@@ -36,10 +36,10 @@ npx http-server apps/shadow_dom_test
 
 単純な静的HTMLファイルなので、ブラウザで直接 `index.html` を開くこともできます。
 
-## Accessibility Visualizerでのテスト方法
+## TheWCAG Accessibility Visualizerでのテスト方法
 
 1. 上記の方法でテストページを開く
-2. ブラウザにAccessibility Visualizer拡張機能をインストール
+2. ブラウザにTheWCAG Accessibility Visualizer拡張機能をインストール
 3. 拡張機能を有効化
 4. Shadow DOM内の要素（フォームの入力欄、ボタン、見出しなど）にアノテーションが表示されることを確認
 
@@ -61,4 +61,8 @@ npx http-server apps/shadow_dom_test
 - キーボード操作のサポート
 - スクリーンリーダー向けのライブリージョン
 
-ただし、**意図的にアクセシビリティの問題も含めている場合があります**（例：ラベルのない入力欄、不適切なARIA属性など）。これらはAccessibility Visualizerが正しく検出できるかをテストするためのものです。
+ただし、**意図的にアクセシビリティの問題も含めている場合があります**（例：ラベルのない入力欄、不適切なARIA属性など）。これらはTheWCAG Accessibility Visualizerが正しく検出できるかをテストするためのものです。
+
+## Credits and Attribution
+
+This test page is part of **TheWCAG Accessibility Visualizer**, which is built on top of the original [Accessibility Visualizer](https://github.com/ymrl/a11y-visualizer) by [ymrl](https://github.com/ymrl).

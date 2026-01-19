@@ -3,6 +3,24 @@
 ![Screenshot of 駒瑠市. Showing annotations of accessibility properties](./a11y-visualizer-komarushi.jpg)
 (This screenshot from [駒瑠市〜アクセシビリティ上の問題の体験サイト〜](https://a11yc.com/city-komaru/))
 
+## About
+
+**TheWCAG Accessibility Visualizer** is a browser extension that visualizes important but visually invisible accessibility information on web pages to help developers improve web accessibility.
+
+This project is built on top of the original [Accessibility Visualizer](https://github.com/ymrl/a11y-visualizer) by [ymrl](https://github.com/ymrl), which provided the foundation and core functionality. We've extended and enhanced it with additional features, improvements, and rebranded it as **TheWCAG Accessibility Visualizer** to better reflect our focus on WCAG compliance and accessibility standards.
+
+### What We Built On Top Of
+
+- **Original Project**: [Accessibility Visualizer](https://github.com/ymrl/a11y-visualizer) by [ymrl](https://github.com/ymrl)
+- **Original License**: MIT License
+- **Our Contributions**: 
+  - Enhanced branding and naming to reflect WCAG focus
+  - Improved website design and user experience
+  - Additional features and accessibility improvements
+  - Comprehensive documentation updates
+
+We are grateful to the original author for creating this excellent foundation and making it available under the MIT License.
+
 ## Install
 
 - [Chrome Web Store](https://chromewebstore.google.com/detail/accessibility-visualizer/idcacekakoknnpbfjcdhnkffgfbddnhk)
@@ -57,6 +75,20 @@ The built extensions will be in `apps/browser_extension/dist/` directory, and zi
 ## Privacy Policy
 
 [./PRIVACY.md](./PRIVACY.md)
+
+## Credits and Attribution
+
+This project is built on top of the original [Accessibility Visualizer](https://github.com/ymrl/a11y-visualizer) by [ymrl](https://github.com/ymrl). We extend our sincere gratitude to the original author for creating this excellent foundation and making it available under the MIT License.
+
+### Original Project
+- **Repository**: [ymrl/a11y-visualizer](https://github.com/ymrl/a11y-visualizer)
+- **Author**: [ymrl](https://github.com/ymrl)
+- **License**: MIT License
+
+### This Project
+- **Repository**: [thewcag-accessibility-visualizer](https://github.com/YOUR_USERNAME/thewcag-accessibility-visualizer)
+- **Based on**: Accessibility Visualizer by ymrl
+- **License**: MIT License ([./LICENSE.txt](./LICENSE.txt))
 
 ## License
 

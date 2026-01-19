@@ -226,3 +226,17 @@ TheWCAG Accessibility Visualizer can be used alongside the following tools for m
 - [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview)
 
 Additionally, **verification with actual screen readers should be performed** alongside verification using these tools. TheWCAG Accessibility Visualizer is a tool for improving development efficiency, but it does not completely replace verification with actual assistive technologies.
+
+## Credits and Attribution
+
+**TheWCAG Accessibility Visualizer** is built on top of the original [Accessibility Visualizer](https://github.com/ymrl/a11y-visualizer) by [ymrl](https://github.com/ymrl). We extend our sincere gratitude to the original author for creating this excellent foundation and making it available under the MIT License.
+
+### Original Project
+- **Repository**: [ymrl/a11y-visualizer](https://github.com/ymrl/a11y-visualizer)
+- **Author**: [ymrl](https://github.com/ymrl)
+- **License**: MIT License
+
+### This Project
+- **Project Name**: TheWCAG Accessibility Visualizer
+- **Based on**: Accessibility Visualizer by ymrl
+- **License**: MIT License
