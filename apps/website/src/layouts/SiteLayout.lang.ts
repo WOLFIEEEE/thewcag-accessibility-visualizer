@@ -8,9 +8,11 @@ export const en = {
       "TheWCAG Accessibility Visualizer's icon (Cartoon eyes on colorful blocks)",
   },
   footer: {
-    copyright: "© 2024 ymrl (MIT License)",
+    copyright: "© 2024 TheWCAG (MIT License)",
     github: "GitHub",
     privacy: "Privacy Policy",
+    thewcag: "TheWCAG.com",
+    credits: "Based on Accessibility Visualizer by ymrl",
   },
 } as const;
 
@@ -24,9 +26,11 @@ export const ja = {
       "TheWCAG Accessibility Visualizerのアイコン (カラフルなブロックの上に描かれた漫画の目)",
   },
   footer: {
-    copyright: "© 2024 ymrl (MIT License)",
+    copyright: "© 2024 TheWCAG (MIT License)",
     github: "GitHub",
     privacy: "プライバシーポリシー",
+    thewcag: "TheWCAG.com",
+    credits: "ymrlによるAccessibility Visualizerを基に作成",
   },
 } as const;
 
@@ -40,8 +44,10 @@ export const ko = {
       "TheWCAG Accessibility Visualizer 아이콘 (화려한 블록 위에 그려진 만화 눈)",
   },
   footer: {
-    copyright: "© 2024 ymrl (MIT License)",
+    copyright: "© 2024 TheWCAG (MIT License)",
     github: "GitHub",
     privacy: "개인정보 처리방침",
+    thewcag: "TheWCAG.com",
+    credits: "ymrl의 Accessibility Visualizer 기반",
   },
 } as const;
