@@ -112,27 +112,295 @@ const tPage = createLocalT(pageDict, pageDict);
     </div>
   </section>
 
-  <!-- Download Section -->
+  <!-- About Section -->
+  <section class="py-20 bg-white dark:bg-zinc-900">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-bold text-center text-zinc-900 dark:text-zinc-100 mb-6">
+        {tPage("about.title")}
+      </h2>
+      <p class="text-lg text-zinc-600 dark:text-zinc-400 mb-6 leading-relaxed max-w-3xl mx-auto text-center">
+        {tPage("about.description")}
+      </p>
+      <p class="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-3xl mx-auto text-center">
+        {tPage("about.valueProposition")}
+      </p>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
   <section class="py-20 bg-zinc-50 dark:bg-zinc-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-bold text-center text-zinc-900 dark:text-zinc-100 mb-16">
+        {tPage("useCases.title")}
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+        <div class="p-6 rounded-xl bg-white dark:bg-zinc-900/50 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors">
+          <h3 class="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-3">
+            {tPage("useCases.items.developers.title")}
+          </h3>
+          <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+            {tPage("useCases.items.developers.description")}
+          </p>
+        </div>
+        <div class="p-6 rounded-xl bg-white dark:bg-zinc-900/50 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors">
+          <h3 class="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-3">
+            {tPage("useCases.items.designers.title")}
+          </h3>
+          <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+            {tPage("useCases.items.designers.description")}
+          </p>
+        </div>
+        <div class="p-6 rounded-xl bg-white dark:bg-zinc-900/50 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors">
+          <h3 class="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-3">
+            {tPage("useCases.items.qa.title")}
+          </h3>
+          <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+            {tPage("useCases.items.qa.description")}
+          </p>
+        </div>
+        <div class="p-6 rounded-xl bg-white dark:bg-zinc-900/50 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors">
+          <h3 class="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-3">
+            {tPage("useCases.items.teams.title")}
+          </h3>
+          <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+            {tPage("useCases.items.teams.description")}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="py-20 bg-white dark:bg-zinc-900">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-bold text-center text-zinc-900 dark:text-zinc-100 mb-16">
+        {tPage("benefits.title")}
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+        <div class="flex items-start space-x-4 p-6 rounded-xl bg-zinc-50 dark:bg-zinc-800/50 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+          <div class="flex-shrink-0 w-12 h-12 bg-teal-100 dark:bg-teal-900 rounded-lg flex items-center justify-center">
+            <svg class="w-6 h-6 text-teal-700 dark:text-teal-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-3">
+              {tPage("benefits.items.noLearning.title")}
+            </h3>
+            <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+              {tPage("benefits.items.noLearning.description")}
+            </p>
+          </div>
+        </div>
+        <div class="flex items-start space-x-4 p-6 rounded-xl bg-zinc-50 dark:bg-zinc-800/50 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+          <div class="flex-shrink-0 w-12 h-12 bg-teal-100 dark:bg-teal-900 rounded-lg flex items-center justify-center">
+            <svg class="w-6 h-6 text-teal-700 dark:text-teal-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-3">
+              {tPage("benefits.items.realTime.title")}
+            </h3>
+            <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+              {tPage("benefits.items.realTime.description")}
+            </p>
+          </div>
+        </div>
+        <div class="flex items-start space-x-4 p-6 rounded-xl bg-zinc-50 dark:bg-zinc-800/50 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+          <div class="flex-shrink-0 w-12 h-12 bg-teal-100 dark:bg-teal-900 rounded-lg flex items-center justify-center">
+            <svg class="w-6 h-6 text-teal-700 dark:text-teal-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-3">
+              {tPage("benefits.items.comprehensive.title")}
+            </h3>
+            <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+              {tPage("benefits.items.comprehensive.description")}
+            </p>
+          </div>
+        </div>
+        <div class="flex items-start space-x-4 p-6 rounded-xl bg-zinc-50 dark:bg-zinc-800/50 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+          <div class="flex-shrink-0 w-12 h-12 bg-teal-100 dark:bg-teal-900 rounded-lg flex items-center justify-center">
+            <svg class="w-6 h-6 text-teal-700 dark:text-teal-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+            </svg>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-3">
+              {tPage("benefits.items.integrated.title")}
+            </h3>
+            <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+              {tPage("benefits.items.integrated.description")}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Getting Started Section -->
+  <section class="py-20 bg-zinc-50 dark:bg-zinc-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-bold text-center text-zinc-900 dark:text-zinc-100 mb-16">
+        {tPage("gettingStarted.title")}
+      </h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="space-y-6">
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-10 h-10 bg-teal-600 text-white rounded-full flex items-center justify-center font-bold">
+              1
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-2">
+                {tPage("gettingStarted.steps.step1.title")}
+              </h3>
+              <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                {tPage("gettingStarted.steps.step1.description")}
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-10 h-10 bg-teal-600 text-white rounded-full flex items-center justify-center font-bold">
+              2
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-2">
+                {tPage("gettingStarted.steps.step2.title")}
+              </h3>
+              <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                {tPage("gettingStarted.steps.step2.description")}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-6">
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-10 h-10 bg-teal-600 text-white rounded-full flex items-center justify-center font-bold">
+              3
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-2">
+                {tPage("gettingStarted.steps.step3.title")}
+              </h3>
+              <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                {tPage("gettingStarted.steps.step3.description")}
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-10 h-10 bg-teal-600 text-white rounded-full flex items-center justify-center font-bold">
+              4
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-2">
+                {tPage("gettingStarted.steps.step4.title")}
+              </h3>
+              <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                {tPage("gettingStarted.steps.step4.description")}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TheWCAG Services Section -->
+  <section class="py-20 bg-gradient-to-br from-teal-50 via-teal-50/50 to-zinc-50 dark:from-teal-900/20 dark:via-teal-900/10 dark:to-zinc-900">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-bold text-center text-zinc-900 dark:text-zinc-100 mb-4">
+        {tPage("services.title")}
+      </h2>
+      <p class="text-lg text-teal-700 dark:text-teal-300 font-semibold text-center mb-4">
+        {tPage("services.subtitle")}
+      </p>
+      <p class="text-lg text-zinc-600 dark:text-zinc-400 mb-12 max-w-3xl mx-auto text-center leading-relaxed">
+        {tPage("services.description")}
+      </p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div class="p-6 rounded-xl bg-white dark:bg-zinc-800/50 hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-3">
+            {tPage("services.items.api.title")}
+          </h3>
+          <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
+            {tPage("services.items.api.description")}
+          </p>
+        </div>
+        <div class="p-6 rounded-xl bg-white dark:bg-zinc-800/50 hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-3">
+            {tPage("services.items.audits.title")}
+          </h3>
+          <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
+            {tPage("services.items.audits.description")}
+          </p>
+        </div>
+        <div class="p-6 rounded-xl bg-white dark:bg-zinc-800/50 hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-3">
+            {tPage("services.items.consulting.title")}
+          </h3>
+          <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
+            {tPage("services.items.consulting.description")}
+          </p>
+        </div>
+        <div class="p-6 rounded-xl bg-white dark:bg-zinc-800/50 hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-3">
+            {tPage("services.items.remediation.title")}
+          </h3>
+          <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
+            {tPage("services.items.remediation.description")}
+          </p>
+        </div>
+        <div class="p-6 rounded-xl bg-white dark:bg-zinc-800/50 hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-3">
+            {tPage("services.items.training.title")}
+          </h3>
+          <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
+            {tPage("services.items.training.description")}
+          </p>
+        </div>
+        <div class="p-6 rounded-xl bg-white dark:bg-zinc-800/50 hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-3">
+            {tPage("services.items.monitoring.title")}
+          </h3>
+          <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
+            {tPage("services.items.monitoring.description")}
+          </p>
+        </div>
+      </div>
+      <div class="text-center space-y-4">
+        <a
+          href={tPage("services.cta.url")}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center px-8 py-4 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-0.5"
+        >
+          {tPage("services.cta.text")}
+        </a>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
+          {tPage("services.cta.extensionNote")}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section class="py-20 bg-white dark:bg-zinc-900">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-3xl sm:text-4xl font-bold text-zinc-900 dark:text-zinc-100 mb-4">
         {tPage("download.title")}
       </h2>
       <p class="text-lg text-zinc-600 dark:text-zinc-400 mb-12 max-w-2xl mx-auto">
-        Get started with TheWCAG Accessibility Visualizer today
+        {tPage("download.description")}
       </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <div class="flex justify-center">
         <a
           href="https://chromewebstore.google.com/detail/accessibility-visualizer/idcacekakoknnpbfjcdhnkffgfbddnhk"
-          class="inline-flex items-center justify-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-0.5 min-w-[200px]"
+          class="inline-flex items-center justify-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-0.5 min-w-[250px]"
         >
           {tPage("download.chromeStore")}
-        </a>
-        <a
-          href="https://addons.mozilla.org/ja/firefox/addon/accessibility-visualizer/"
-          class="inline-flex items-center justify-center px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-0.5 min-w-[200px]"
-        >
-          {tPage("download.firefoxAddons")}
         </a>
       </div>
     </div>
