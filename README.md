@@ -1,6 +1,6 @@
 # TheWCAG Accessibility Visualizer Browser Extension
 
-![Screenshot of 駒瑠市. Showing annotations of accessibility properties](./a11y-visualizer-komarushi.jpg)
+![Screenshot of TheWCAG Accessibility Visualizer showing annotations of accessibility properties](./TheWCAG-Accessibility-Visualizer-Image.png)
 (This screenshot from [駒瑠市〜アクセシビリティ上の問題の体験サイト〜](https://a11yc.com/city-komaru/))
 
 ## About
